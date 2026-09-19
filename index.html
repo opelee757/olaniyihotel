@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+  <meta name="theme-color" content="#06101E" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>OLANIYI HOTEL | Arigidi Akoko, Ondo State</title>
+  <meta name="description" content="Experience premium accommodation, luxury suites, fine local dining, and hospitality at OLANIYI HOTEL, Arigidi Akoko, Ondo State." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo">
+        <div class="logo-badge">O</div>
+        <div class="logo-text">
+          <span class="hotel-title">OLANIYI HOTEL</span>
+          <span class="hotel-sub">Arigidi Akoko</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="nav-menu">
+        <a href="#home" class="nav-item">Home</a>
+        <a href="#about" class="nav-item">About</a>
+        <a href="#rooms" class="nav-item">Rooms & Suites</a>
+        <a href="#amenities" class="nav-item">Amenities</a>
+        <a href="#gallery" class="nav-item">Gallery</a>
+        <a href="#faq" class="nav-item">FAQ</a>
+        <a href="#location" class="nav-item">Location</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-orange btn-header" id="nav-book-btn">Book Stay</button>
+        <button class="hamburger-toggle" id="menu-toggle" aria-label="Open Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-container container">
+      <div class="hero-badge">
+        <span class="dot-pulse"></span> Arigidi Akoko, Ondo State
+      </div>
+      <h1 class="hero-heading">Where Elegance Meets <span class="orange-gradient-text">Unmatched Comfort</span></h1>
+      <p class="hero-subtext">
+        Welcome to OLANIYI HOTEL. Discover tailored accommodation, exquisite dining, and peaceful surroundings in Ondo State.
+      </p>
+      <div class="hero-cta-group">
+        <button class="btn btn-orange btn-xl" onclick="openReservationModal()">Reserve Your Room ➔</button>
+        <a href="#rooms" class="btn btn-glass btn-xl">Explore Suites</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Booking Strip -->
+  <div class="quick-booking-strip">
+    <div class="container">
+      <form id="strip-booking-form" class="strip-form">
+        <div class="strip-input-group">
+          <label for="strip-checkin">Check-In</label>
+          <input type="date" id="strip-checkin" required />
+        </div>
+        <div class="strip-input-group">
+          <label for="strip-checkout">Check-Out</label>
+          <input type="date" id="strip-checkout" required />
+        </div>
+        <div class="strip-input-group">
+          <label for="strip-guests">Guests</label>
+          <select id="strip-guests">
+            <option value="1 Guest">1 Adult</option>
+            <option value="2 Guests" selected>2 Adults</option>
+            <option value="3 Guests">3 Guests</option>
+            <option value="4+ Guests">Family (4+)</option>
+          </select>
+        </div>
+        <div class="strip-input-group">
+          <label for="strip-room">Room Category</label>
+          <select id="strip-room">
+            <option value="Standard Room">Standard Room</option>
+            <option value="Deluxe Room">Deluxe Room</option>
+            <option value="Executive Suite">Executive Suite</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-orange btn-strip">Check Availability</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="section bg-light">
+    <div class="container grid grid-2 align-center">
+      <div class="about-visual-stack">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=80" alt="Olaniyi Hotel Building" class="img-main rounded-card" />
+        <div class="experience-card">
+          <span class="exp-number">24/7</span>
+          <span class="exp-text">Uninterrupted Security & Hospitality</span>
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="sub-badge">Discover Hospitality</span>
+        <h2 class="section-title">A Premier Sanctuary in Arigidi Akoko</h2>
+        <p class="description lead-desc">
+          OLANIYI HOTEL offers standard and executive accommodation designed to cater to modern travelers, corporate guests, and visiting families.
+        </p>
+        <p class="description">
+          Located in the vibrant community of Arigidi Akoko, Ondo State, our establishment combines high-end comfort, authentic local dining, ultra-secure surroundings, and round-the-clock dedicated service.
+        </p>
+        
+        <div class="highlights-grid">
+          <div class="highlight-item">
+            <div class="hl-icon">⚡</div>
+            <div>
+              <h4>24/7 Power Support</h4>
+              <p>Constant backup power supply for continuous comfort.</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="hl-icon">🛡️</div>
+            <div>
+              <h4>Gated Security</h4>
+              <p>Monitored premises with trained 24-hour security.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Rooms Section -->
+  <section id="rooms" class="section bg-white">
+    <div class="container">
+      <div class="section-header text-center max-w-sm">
+        <span class="sub-badge">Accommodations</span>
+        <h2 class="section-title">Rooms & Executive Suites</h2>
+        <p class="description">Select the ideal room for your stay. Equipped with climate control, high-speed Wi-Fi, and plush beddings.</p>
+      </div>
+
+      <div class="room-tabs" id="room-tabs">
+        <button class="tab-btn active" data-filter="all">All Rooms</button>
+        <button class="tab-btn" data-filter="standard">Standard</button>
+        <button class="tab-btn" data-filter="deluxe">Deluxe</button>
+        <button class="tab-btn" data-filter="suite">Executive Suites</button>
+      </div>
+
+      <div class="grid grid-3" id="rooms-cards-container">
+        <!-- Rendered dynamic room cards -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Features & Amenities Section -->
+  <section id="amenities" class="section bg-navy text-white">
+    <div class="container">
+      <div class="section-header text-center max-w-sm">
+        <span class="sub-badge orange-text">Designed For Comfort</span>
+        <h2 class="section-title text-white">Hotel Amenities & Features</h2>
+        <p class="description text-gray">Everything you need for a restful, convenient, and safe stay in Arigidi Akoko.</p>
+      </div>
+
+      <div class="grid grid-3" id="amenities-container">
+        <!-- Rendered dynamic amenities -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Gallery Section -->
+  <section id="gallery" class="section bg-light">
+    <div class="container">
+      <div class="section-header text-center max-w-sm">
+        <span class="sub-badge">Gallery</span>
+        <h2 class="section-title">Explore Our Atmosphere</h2>
+        <p class="description">Take a peek inside our rooms, lounge, dining spaces, and external grounds.</p>
+      </div>
+
+      <div class="gallery-filter-bar" id="gallery-filters">
+        <button class="gal-filter-btn active" data-cat="All">All Photos</button>
+        <button class="gal-filter-btn" data-cat="Rooms">Rooms</button>
+        <button class="gal-filter-btn" data-cat="Dining">Dining</button>
+        <button class="gal-filter-btn" data-cat="Exterior">Exterior</button>
+      </div>
+
+      <div class="gallery-grid" id="gallery-container">
+        <!-- Rendered gallery photos -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section bg-white">
+    <div class="container max-w-sm">
+      <div class="section-header text-center">
+        <span class="sub-badge">Got Questions?</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="description">Find clear answers to common questions about reservations, check-in, and facilities at OLANIYI HOTEL.</p>
+      </div>
+
+      <div class="accordion" id="faq-accordion">
+        <!-- FAQ Items dynamically populated -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Location Map Section -->
+  <section id="location" class="section bg-light">
+    <div class="container">
+      <div class="section-header text-center max-w-sm">
+        <span class="sub-badge">Navigation & Map</span>
+        <h2 class="section-title">Our Live Location</h2>
+        <p class="description">Easily locate OLANIYI HOTEL in Arigidi Akoko, Ondo State. Click below for real-time directions.</p>
+      </div>
+
+      <div class="map-card card">
+        <div class="map-wrapper">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31599.50873614053!2d5.7333!3d7.5167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1047f0fbc18ab809%3A0x6a0c5c40bc3d2e66!2sArigidi%20Akoko%2C%20Ondo%20State!5e0!3m2!1sen!2sng!4v1700000000000!5m2!1sen!2sng" 
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="OLANIYI HOTEL Location Map">
+          </iframe>
+        </div>
+        <div class="map-footer-bar">
+          <div>
+            <strong>OLANIYI HOTEL</strong>
+            <p class="text-sm text-gray">1, Ajowa Street, Agbaluku, Arigidi Akoko, Ondo State</p>
+          </div>
+          <a href="https://maps.google.com/?q=Arigidi+Akoko+Ondo+State" target="_blank" rel="noopener noreferrer" class="btn btn-navy text-sm">
+            📍 Open in Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Dual-Messaging Form Section -->
+  <section id="contact" class="section bg-white">
+    <div class="container">
+      <div class="grid grid-2 align-center">
+        <div class="contact-info-panel">
+          <span class="sub-badge">Connect With Us</span>
+          <h2 class="section-title">We are ready to welcome you</h2>
+          <p class="description">Reach out directly for corporate bookings, event venue reservations, or general enquiries.</p>
+          
+          <div class="contact-details-list">
+            <div class="c-detail-card">
+              <span class="c-icon">📍</span>
+              <div>
+                <strong>Location Address</strong>
+                <p>1, Ajowa Street, Agbaluku, Arigidi Akoko, Ondo State, Nigeria</p>
+              </div>
+            </div>
+
+            <div class="c-detail-card">
+              <span class="c-icon">📞</span>
+              <div>
+                <strong>Direct Phone Line</strong>
+                <p>+234 800 000 0000 / +234 7033681227</p>
+              </div>
+            </div>
+
+            <div class="c-detail-card">
+              <span class="c-icon">✉️</span>
+              <div>
+                <strong>Email Address</strong>
+                <p>reservations@olaniyihotel.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-panel card">
+          <h3 class="form-heading">Send an Enquiry</h3>
+          <p class="text-sm text-gray mb-4">Choose your preferred channel below to send your message instantly via WhatsApp or Gmail.</p>
+          
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="contact-name">Full Name *</label>
+              <input type="text" id="contact-name" required placeholder="e.g. Oyedun Opeoluwa" />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-email">Email Address *</label>
+                <input type="email" id="contact-email" required placeholder="name@domain.com" />
+              </div>
+              <div class="form-group">
+                <label for="contact-phone">Phone Number *</label>
+                <input type="tel" id="contact-phone" required placeholder="07033681227" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-msg">Message or Special Request *</label>
+              <textarea id="contact-msg" rows="4" required placeholder="Tell us how we can help..."></textarea>
+            </div>
+            
+            <!-- Dual Dispatch Action Buttons -->
+            <div class="dual-send-actions">
+              <button type="button" class="btn btn-whatsapp w-full" id="btn-send-contact-wa">
+                💬 Send via WhatsApp
+              </button>
+              <button type="button" class="btn btn-gmail w-full" id="btn-send-contact-email">
+                ✉️ Send via Gmail / Email
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container grid grid-4">
+      <div>
+        <div class="brand-logo mb-4">
+          <div class="logo-badge">O</div>
+          <div class="logo-text">
+            <span class="hotel-title text-white">OLANIYI HOTEL</span>
+            <span class="hotel-sub">Arigidi Akoko</span>
+          </div>
+        </div>
+        <p class="text-gray text-sm">Providing exceptional accommodation, peaceful rest, and top-tier security in Ondo State.</p>
+      </div>
+      <div>
+        <h4 class="footer-head">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#rooms">Rooms & Suites</a></li>
+          <li><a href="#amenities">Amenities</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-head">Support & Info</h4>
+        <ul class="footer-links">
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#location">Live Location Map</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-head">Address</h4>
+        <p class="text-gray text-sm">1, Ajowa Street, Agbaluku, Arigidi Akoko, Ondo State, Nigeria</p>
+        <p class="text-orange text-sm mt-2">Open 24 Hours / 7 Days</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container text-center">
+        <p>© 2026 OLANIYI HOTEL. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action -->
+  <a href="https://wa.me/2347033681227?text=Hello%20Olaniyi%20Hotel,%20I%20would%20like%20to%20inquire%20about%20a%20room." target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" aria-label="Chat with us on WhatsApp">
+    💬
+  </a>
+
+  <!-- Room Modal -->
+  <div class="modal-backdrop" id="room-detail-modal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="close-room-modal">&times;</button>
+      <div id="room-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Booking Modal (With Dual WhatsApp & Email Dispatches) -->
+  <div class="modal-backdrop" id="booking-modal">
+    <div class="modal-card max-w-sm">
+      <button class="modal-close-btn" id="close-booking-modal">&times;</button>
+      <h3 class="modal-heading">Reserve Your Stay</h3>
+      <p class="text-sm text-gray mb-4">Select your preferred route below to send your booking request directly via WhatsApp or Email.</p>
+      
+      <form id="reservation-form">
+        <div class="form-group">
+          <label for="res-name">Full Name *</label>
+          <input type="text" id="res-name" required placeholder="e.g. Chidi Okafor" />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="res-email">Email *</label>
+            <input type="email" id="res-email" required placeholder="chidi@example.com" />
+          </div>
+          <div class="form-group">
+            <label for="res-phone">Phone *</label>
+            <input type="tel" id="res-phone" required placeholder="07033681227" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="res-checkin">Check-In *</label>
+            <input type="date" id="res-checkin" required />
+          </div>
+          <div class="form-group">
+            <label for="res-checkout">Check-Out *</label>
+            <input type="date" id="res-checkout" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="res-room-type">Select Room</label>
+          <select id="res-room-type">
+            <option value="Standard Room">Standard Room</option>
+            <option value="Deluxe Room">Deluxe Room</option>
+            <option value="Executive Suite">Executive Suite</option>
+          </select>
+        </div>
+
+        <div class="dual-send-actions mt-4">
+          <button type="button" class="btn btn-whatsapp w-full" id="btn-send-res-wa">
+            💬 Book via WhatsApp
+          </button>
+          <button type="button" class="btn btn-gmail w-full" id="btn-send-res-email">
+            ✉️ Book via Gmail / Email
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Lightbox Gallery Modal -->
+  <div class="lightbox-modal" id="gallery-lightbox">
+    <button class="lightbox-close" id="lb-close">&times;</button>
+    <button class="lightbox-nav lb-prev" id="lb-prev">&#10094;</button>
+    <button class="lightbox-nav lb-next" id="lb-next">&#10095;</button>
+    <div class="lightbox-box">
+      <img src="" id="lb-img" alt="Gallery Preview" />
+      <p id="lb-caption" class="lb-cap"></p>
+    </div>
+  </div>
+
+  <!-- Toast Notification Wrapper -->
+  <div id="toast-wrapper" class="toast-wrapper"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
